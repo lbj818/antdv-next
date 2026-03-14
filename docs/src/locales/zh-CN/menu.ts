@@ -21,6 +21,8 @@ const menuLocales = {
       nuxt: 'Nuxt',
       advancedUse: '进阶使用',
       secondaryDevelopment: '二次开发',
+      unocss: 'UnoCSS',
+      tailwindcss: 'Tailwind CSS',
       customizeTheme: '定制主题',
       compatibleStyle: '样式兼容',
       i18n: '国际化',
