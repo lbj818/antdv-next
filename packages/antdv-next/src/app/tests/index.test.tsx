@@ -215,13 +215,14 @@ describe('app', () => {
       })
     })
 
-    it('should work by default', () => {
+    it('should work by default', async () => {
       const wrapper = mount(() => (
         <App>
           <SmileOutlined />
         </App>
       ))
 
+      await waitFakeTimer(0, 1)
       expect(wrapper.find('.anticon').exists()).toBe(true)
       const dynamicStyles = Array.from(document.querySelectorAll('style[data-css-hash]'))
       const regex = /\.anticon\s*\{[^}]*\}/
